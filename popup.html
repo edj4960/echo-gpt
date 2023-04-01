@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo GPT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+            background-color: #111;
+            color: #fff;
+            width: 360px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            color: #eee;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #222;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        select {
+            margin-left: 10px;
+            padding: 5px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Echo GPT</h1>
+    <label>
+        <input id="toggleListen" type="checkbox">
+        Listen
+    </label>
+    <label>
+        <input id="toggleRead" type="checkbox">
+        Read
+    </label>
+    <label id="voiceSelectLabel">
+        Voice:
+        <select id="voiceSelect"></select>
+    </label>
+    <label>
+        <input id="toggleStartPhrase" type="checkbox">
+        Start Phrase
+    </label>
+    <label id="startPhraseLabel">
+        Phrase:
+        <input id="startPhraseText" type="text">
+    </label>
+    <script src="popup.js"></script>
+</body>
+
+</html>
